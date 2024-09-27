@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'HYWenHei';
+    src: url('../zhcn.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'D-Din Pro';
+    src: url(../otf/D-DIN-PRO-400-Regular.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'D-Din Pro';
+    src: url(../otf/D-DIN-PRO-500-Medium.otf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'D-Din Pro';
+    src: url(../otf/D-DIN-PRO-600-SemiBold.otf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'D-Din Pro';
+    src: url(../otf/D-DIN-PRO-700-Bold.otf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'D-Din Pro';
+    src: url(../otf/D-DIN-PRO-800-ExtraBold.otf);
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'D-Din Pro';
+    src: url(../otf/D-DIN-PRO-900-Heavy.otf);
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Din Text Pro';
+    src: url("../PFDinTextPro-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Din Text Pro';
+    src: url("../PFDinTextPro-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}

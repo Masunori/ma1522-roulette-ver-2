@@ -1,0 +1,331 @@
+html {
+    background-color: #242424;
+    color: #ccc;
+    font-family: 'PF Din Text Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+button {
+    font-family: 'PF Din Text Pro', sans-serif;
+    font-weight: 500;
+}
+
+#app {
+    background: radial-gradient(circle at 100% 50%, 
+                              #ead47e 10%, /* Bright yellow at the center of the shot */
+                              #342f10 50%, /* Gradual transition to dark */
+                              #15232e 100%); /* Full dark at the edges */
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#app::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("photos/istockphoto-498478219-612x612.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.15;
+    z-index: 1;
+}
+
+#app > * {
+    position: relative;
+    z-index: 2;
+}
+
+#app button {
+    cursor: pointer;
+}
+
+#banner {
+    width: 80%;
+    height: 80%;
+    border: 1px solid #91a529;
+    display: flex;
+    border-radius: 10px;
+}
+
+#descriptor {
+    width: 28%;
+    border-right: 1px solid #484848;
+    border-radius: 10px 100px 10px 10px;
+    background-image: linear-gradient(#848484, #5e573c);
+    padding: 5% 5% 0;
+    font-size: 1.3rem;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+#descriptor h2 {
+    font-weight: 500;
+}
+
+#decriptor p {
+    font-size: 0.8rem;
+}
+
+#descriptor #buttons {
+    margin-top: 40%;
+    display: flex;
+    justify-content: space-between;
+    width: 175%;
+    transform: translate(-15%, 0);
+}
+
+#descriptor button, #illustrator button {
+    font-size: 1rem;
+    padding: 10px 30px;
+    border-radius: 20px;
+    width: fit-content;
+    border: 1px solid #aaa;
+    position: relative;
+    z-index: 3;
+    transition-duration: 0.2s;
+}
+
+#descriptor button::before, #illustrator button::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border: 2px solid #aaa;
+    border-radius: 17px;
+    pointer-events: none;
+}
+
+#descriptor button:hover, #illustrator button:hover {
+    background-color: #ccc;
+}
+
+#descriptor-highlight {
+    border: 1px solid rgb(132, 0, 0);
+    border-radius: 0 20px 20px 0;
+    background-color: #f00;
+    width: fit-content;
+    padding: 5px 15px 5px;
+    position: absolute;
+    left: -2%;
+    top: 2%;
+    z-index: 3;
+    font-weight: 600;
+}
+
+#separator {
+    position: absolute;
+    top: 5%;
+    left: 2.5%;
+    height: 95%;
+    border: 1px solid #5e573c;
+}
+
+#illustrator {
+    width: 72%;
+}
+
+#illustrator::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("photos/DrJonathonTeo.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    opacity: 0.35;
+    z-index: 0;
+}
+
+#illustrator #guarantee-countdown {
+    position: absolute;
+    right: 2.5%;
+    top: 5%;
+    width: 20%;
+    text-align: right;
+}
+
+#illustrator #tco-countdown, #wildcard-accumulator {
+    font-size: 1.5rem;
+}
+
+#illustrator #roll-buttons {
+    position: absolute;
+    right: 2.5%;
+    bottom: 5%;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#rule {
+    border: 2px solid #242424;
+    padding: 20px 40px;
+    border-radius: 10px;
+    transition-duration: 0.25s;
+    width: 60%;
+    height: 60%;
+    max-height: 750px;
+    max-width: 1000x;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3b4828;
+    pointer-events: visible;
+    z-index: 1000;
+
+    /* delete later */
+    display: none;
+}
+
+#rule-navbar {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+#rule > div {
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    opacity: 1;
+}
+
+#rule button {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #50682e;
+    border: 2px solid #374029;
+    transition-duration: 0.2s;
+    color: #e0e0e0;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#rule-navbar > button {
+    background-color: #24281e;
+    border: none;
+    border-radius: 0;
+    font-size: 0.7rem;
+    padding: 10px;
+    border-bottom: 1px solid #24281e;
+}
+
+#toggle-rules {
+    background-color: #79b02c;
+}
+
+#view-details:hover, #view-drop-rates:hover, #view-logs:hover {
+    background-color: #384920;
+}
+
+#rule #details {
+    display: block;
+}
+
+#rule #details > ul {
+    text-align: left;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+
+#rule #view-details {
+    background-color: #384920;
+}
+
+#rule #drop-rates, #rule #logs {
+    display: none;
+}
+
+#rule #table-container {
+    max-height: 250px;
+    overflow: auto;
+    width: fit-content;
+    margin: auto;
+    border: 4px solid #2f3a1f;
+    padding: 2px;
+    border-radius: 6px;
+}
+
+#rule #table-container::-webkit-scrollbar {
+    width: 5px;
+    margin: 0;
+}
+
+#rule #table-container::-webkit-scrollbar-thumb {
+    background-color: #007acc; /* color of the scrollbar handle */
+    border-radius: 4px;     /* rounded corners */
+}
+
+#rule #logs-table {
+    margin: auto;
+    border: 1px solid #007acc;
+    border-radius: 0.3rem;
+    font-size: 0.65rem;
+}
+
+#rule #logs-table th, td {
+    border: 1px solid #007acc;
+    padding: 0.1rem 0.7rem;
+    border-radius: 0.3rem;
+}
+
+#drop-rates-table {
+    margin: auto;
+    border: 2px solid #034f83;
+    border-radius: 0.3rem;
+}
+
+#drop-rates-table th, td {
+    border: 1px solid #007acc;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.3rem;
+}
+
+#logs-table th {
+    background-color: #092030;
+    pointer-events: none;
+    font-size: 0.85rem;
+}
+
+#drop-rates-table th {
+    background-color: #092030;
+    pointer-events: none;
+}
+
+#drop-rates-table {
+    background-color: #253b4a;
+}
+
+#drop-rates-table tr {
+    transition-duration: 0.2s;
+}
+
+#drop-rates-table tr:hover {
+    background-color: rgb(92, 116, 139);
+}
+
+#roll-animation {
+    display: none;
+}
+
+
