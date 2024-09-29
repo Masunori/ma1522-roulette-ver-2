@@ -190,11 +190,12 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #3b4828;
-    pointer-events: visible;
-    z-index: 1000;
+    background-image: radial-gradient(#938bb5, #536b2f 60%, #3b4828);
+    pointer-events: auto;
+    z-index: 4;
 
     /* delete later */
-    display: none;
+    /* display: none; */
 }
 
 #rule-navbar {
@@ -231,7 +232,13 @@ button {
 }
 
 #toggle-rules {
-    background-color: #79b02c;
+    background-color: #607b3a !important;
+    transition-duration: 0.2s;
+}
+
+#toggle-rules:hover {
+    background-color: #70953c !important;
+    color: #ccc;
 }
 
 #view-details:hover, #view-drop-rates:hover, #view-logs:hover {
@@ -289,6 +296,19 @@ button {
     border-radius: 0.3rem;
 }
 
+.log-the-chosen-one {
+    background-image: linear-gradient(to right, #ffd700, #696835);
+    color: #484848;
+}
+
+.log-wildcard {
+    background-color: #800080;
+}
+
+.log-not-chosen {
+    background-color: #5490b9;
+}
+
 #drop-rates-table {
     margin: auto;
     border: 2px solid #034f83;
@@ -325,7 +345,66 @@ button {
 }
 
 #roll-animation {
-    display: none;
+    width: 80vw;
+    height: 80vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+#roll-result-displayer {
+    position: fixed;
+    width: 60vw;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(#214662, #15232e);
+    border: 2px solid #242424;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.result-square {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 1px solid #363636;
+    border-radius: 20px;
+}
+
+#result-squares-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 60px 0;
+    grid-template-areas: 
+        "rs0 rs1 rs2 rs3 rs4"
+        "rs5 rs6 rs7 rs8 rs9";
+}
+
+#roll-result-displayer p {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+#close-rrd {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border-radius: 50px;
+    font-size: 1rem;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #182936;
+    color: #ccc;
+    transition-duration: 0.2s;
+}
+
+#close-rrd:hover {
+    background-color: #244a66;
+}
 

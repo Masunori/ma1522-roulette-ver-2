@@ -9,7 +9,14 @@ export default function Logs({ rollResults }) {
             </thead>
             <tbody>
                 {rollResults.map(([roll, result]) => (
-                    <tr key={roll}>
+                    <tr 
+                      key={roll} 
+                      className={result === "The Chosen One" 
+                                 ? "log-the-chosen-one" 
+                                 : result === "Wild Card"
+                                 ? "log-wildcard"
+                                 : "log-not-chosen"}
+                    >
                         <td>{roll}</td>
                         <td>{result}</td>
                     </tr>

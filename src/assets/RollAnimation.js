@@ -1,23 +1,25 @@
-import { useEffect, useRef } from "react";
+import ReactPlayer from 'react-player';
 
-export default function RollAnimation({ setPlayFunction }) {
-    const videoRef = useRef(null);
-
-    useEffect(() => {
-        if (setPlayFunction) {
-            setPlayFunction(() => {
-                if (videoRef.current) {
-                    videoRef.current.play();
-                }
-            });
-        }
-    }, [setPlayFunction]);
+export default function RollAnimation({ isPlaying, handleEnded, outcome = -1 }) {    
+    const videoToPlay = outcome === 1
+                        ? process.env.PUBLIC_URL + '/videos/Outcome-1.mp4'
+                        : outcome === 0
+                        ? process.env.PUBLIC_URL + '/videos/Outcome-2.mp4'
+                        : process.env.PUBLIC_URL + '/videos/Outcome-Nah.mp4';
 
     return (
-        <div id="roll-animation">
-            <video ref={videoRef} width="100vw" height="100vh">
-                <source src="./../photos/Outcome-2.mp4" type="video/mp4" />
-            </video>
-        </div>
+        <ReactPlayer 
+            url={videoToPlay}
+            playing={isPlaying}
+            onEnded={handleEnded}
+            width='100%'
+            height='100%'
+            style={{ 
+                display: isPlaying ? 'block' : 'none',
+                position: 'fixed',
+                top: '0',
+                left: '0', 
+            }} 
+        />
     )
 }

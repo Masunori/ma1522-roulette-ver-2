@@ -37,7 +37,7 @@ export default function Rule({ rollResults }) {
         <div id="details">
           <h1>MA1522 Tutorial 5 Banner Details</h1>
           <ul>
-            <li>Somebody is guaranteed to be chosen at the 300th roll.</li>
+            <li>Somebody is guaranteed to be chosen at the 200th roll.</li>
             <li>You can roll 1 or 10 times.</li>
             <li>Wild Cards will either help or sabotage you.</li>
             <li>After being chosen, you can choose not to use Wild Cards, or pick 1 out of the number of Wild Card chances obtained.</li>
