@@ -7,8 +7,8 @@ export default function Descriptor() {
           Event Banner
         </div>
         <div id="separator"></div>
-          <h2>MA1522 Tutorial 5 Banner</h2>
-          <p>Ends at 10am, Monday, 30th September 2024</p>
+          <h2>MA1522 Tutorial 7 Banner</h2>
+          <p>Ends at 10am, Monday, 14th October 2024</p>
           <p>No, this banner does not drop Dr Jonathon Teo, I just have no design ideas.</p>
 
           <div id="buttons"> 

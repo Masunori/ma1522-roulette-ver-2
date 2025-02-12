@@ -35,7 +35,7 @@ export default function Rule({ rollResults }) {
             <button onClick={() => focusOn('logs')} id="view-logs">View logs</button>
         </div>
         <div id="details">
-          <h1>MA1522 Tutorial 5 Banner Details</h1>
+          <h1>MA1522 Tutorial 7 Banner Details</h1>
           <ul>
             <li>Somebody is guaranteed to be chosen at the 200th roll.</li>
             <li>You can roll 1 or 10 times.</li>

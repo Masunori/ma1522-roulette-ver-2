@@ -8,7 +8,7 @@ const NAH = 2;
 
 const isWhat = x => (theChosenOneCountdown === 0 || x < 0.01) ? THE_CHOSEN_ONE : (x < 0.0622 ? WILDCARD : NAH);
 
-let rollOnesLeft = 10;
+let rollOnesLeft = 3;
 
 let isSomeoneChosen = false;
 let temporary_roll_result = 2;
